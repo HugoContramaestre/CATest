@@ -1,0 +1,6 @@
+rootProject.name = "C&ATest"
+include ':app'
+include ':domain'
+include ':testShared'
+include ':usecases'
+include ':data'

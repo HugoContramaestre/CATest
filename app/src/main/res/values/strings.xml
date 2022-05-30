@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">C&amp;ATest</string>
+    <string name="title_weather">Weather</string>
+    <string name="title_web">Web</string>
+    <string name="error_connection">Connection error</string>
+    <string name="error_unknown">Unknown Error</string>
+    <string name="error_unexpected">Unexpected error</string>
+    <string name="common_empty_list">empty</string>
+    <string name="common_retry">retry</string>
+    <string name="common_min_max_temp">min %.1fº/max %.1fº</string>
+</resources>

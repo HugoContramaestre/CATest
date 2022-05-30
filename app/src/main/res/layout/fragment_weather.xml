@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.weather.WeatherFragment"
+        android:paddingHorizontal="@dimen/item_padding_horizontal"
+        android:paddingTop="@dimen/item_padding_top">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/today_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/background"
+            app:cardCornerRadius="20dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/city_weather_city_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:gravity="center"
+                    tools:text="Düsseldorf"
+                    />
+
+                <ImageView
+                    android:id="@+id/city_weather_image"
+                    android:layout_width="@dimen/city_weather_image_width"
+                    android:layout_height="@dimen/city_weather_image_width"
+                    app:layout_constraintTop_toBottomOf="@+id/city_weather_city_name"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="@dimen/detail_margin_top_normal"
+                    />
+
+                <TextView
+                    android:id="@+id/city_weather_city_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@+id/city_weather_image"
+                    app:layout_constraintTop_toBottomOf="@+id/city_weather_city_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="@dimen/detail_margin_top_normal"
+                    android:layout_marginStart="@dimen/detail_margin_top_normal"
+                    tools:text="19/05/2022"
+                    />
+
+                <TextView
+                    android:id="@+id/city_weather_city_temperature"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@+id/city_weather_image"
+                    app:layout_constraintTop_toBottomOf="@+id/city_weather_city_date"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="@dimen/detail_margin_top_normal"
+                    android:layout_marginStart="@dimen/detail_margin_top_normal"
+                    tools:text="min 19º/ max 30º"
+                    />
+
+                <TextView
+                    android:id="@+id/city_weather_city_weather_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@+id/city_weather_image"
+                    app:layout_constraintTop_toBottomOf="@+id/city_weather_city_temperature"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="@dimen/detail_margin_top_normal"
+                    android:layout_marginStart="@dimen/detail_margin_top_normal"
+                    tools:text="cloudy"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/skeleton_list"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/today_card"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:clipToPadding="false"
+            android:paddingTop="@dimen/detail_margin_top_normal"
+            android:paddingBottom="@dimen/detail_margin_top_normal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_forecast_day"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/today_card"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:clipToPadding="false"
+            android:paddingTop="@dimen/detail_margin_top_normal"
+            android:paddingBottom="@dimen/detail_margin_top_normal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_forecast_day"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

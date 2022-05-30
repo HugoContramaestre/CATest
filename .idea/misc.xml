@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Hugo/Documents/Android projects/CATest/app/src/main/res/layout/activity_main.xml" value="0.26165146909827763" />
+        <entry key="..\:/Users/Hugo/Documents/Android projects/CATest/app/src/main/res/menu/bottom_nav_menu.xml" value="0.28703703703703703" />
+        <entry key="..\:/Users/Hugo/Documents/AndroidProjects/CATest/app/src/main/res/layout/activity_main.xml" value="0.13044579533941236" />
+        <entry key="..\:/Users/Hugo/Documents/AndroidProjects/CATest/app/src/main/res/layout/fragment_weather.xml" value="0.33814102564102566" />
+        <entry key="..\:/Users/Hugo/Documents/AndroidProjects/CATest/app/src/main/res/layout/fragment_webview.xml" value="0.13796296296296295" />
+        <entry key="..\:/Users/Hugo/Documents/AndroidProjects/CATest/app/src/main/res/layout/item_forecast_day.xml" value="0.2796296296296296" />
+        <entry key="..\:/Users/Hugo/Documents/AndroidProjects/CATest/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2641025641025641" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
